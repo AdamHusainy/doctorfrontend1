@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // File: src/App.jsx
 
 import React from 'react';
@@ -20,8 +21,55 @@ function App() {
         <Faq />
         <Cta />
       </main>
+=======
+import React, { useState } from "react";
+import Dashboard from "../components/Dashboard";
+import Appointment from "../components/Appointment";
+import "./App.css";
+
+function App() {
+  const [activePage, setActivePage] = useState("dashboard");
+
+  return (
+    <div className="app-container">
+      {/* Sidebar */}
+      <div className="sidebar">
+        <div className="logo">User-Dashboard</div>
+        <div className="menu">
+          <a
+            href="#"
+            className={activePage === "dashboard" ? "active" : ""}
+            onClick={() => setActivePage("dashboard")}
+          >
+            🏠 Dashboard
+          </a>
+          <a
+            href="#"
+            className={activePage === "appointment" ? "active" : ""}
+            onClick={() => setActivePage("appointment")}
+          >
+            📅 Appointments
+          </a>
+          <a href="#">💊 Prescriptions</a>
+          <a href="#">📂 Reports</a>
+          <a href="#">💬 Messages</a>
+          <a href="#">⚙️ Settings</a>
+          <a href="#">🚪 Logout</a>
+        </div>
+      </div>
+
+      {/* Main content */}
+      <div className="main">
+        {activePage === "dashboard" && <Dashboard />}
+        {activePage === "appointment" && <Appointment />}
+      </div>
+>>>>>>> 2befdaf (new commit)
     </div>
   );
 }
 
+<<<<<<< HEAD
 export default App;
+=======
+export default App;
+>>>>>>> 2befdaf (new commit)

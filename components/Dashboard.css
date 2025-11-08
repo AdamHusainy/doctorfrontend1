@@ -1,0 +1,97 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: #1c1c1c;
+  border: 1px solid rgba(255,255,255,0.03);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+h2 {
+  color: #15b364;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 8px;
+  font-size: 0.9rem;
+}
+
+thead {
+  background: #15b364;
+  color: #000;
+}
+
+tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+tbody tr:hover {
+  background: rgba(21,179,100,0.04);
+}
+
+.status-confirmed { color: #15b364; font-weight: 600; }
+.status-pending { color: #ffd966; font-weight: 600; }
+
+.graph {
+  height: 200px; /* container height */
+}
+
+
+.chart-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.chart-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.prescription, .chat, .tip {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.pill-icon {
+  background: rgba(21,179,100,0.08);
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #15b364;
+  font-weight: bold;
+}
+
+.chat img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.tip span {
+  color: #15b364;
+  margin-right: 8px;
+}
+
+@media (max-width: 900px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}

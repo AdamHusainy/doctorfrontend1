@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -32,4 +33,14 @@ body {
 /* Custom style for text-balance for browsers that support it */
 .text-balance {
   text-wrap: balance;
+=======
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+body{
+  min-height: 100vh;
+>>>>>>> 2befdaf (new commit)
 }

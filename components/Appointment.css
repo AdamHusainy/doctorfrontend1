@@ -1,0 +1,169 @@
+/* Container */
+.appointments-container {
+  padding: 20px;
+  background-color: #0f0f0f;
+  color: #fff;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.appointments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.appointments-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.appointments-header span {
+  font-size: 16px;
+  color: #aaa;
+}
+
+/* Stats cards */
+.stats-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  flex: 1;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #15b364;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Search & Filter */
+.search-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-filter input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.search-filter select {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Appointment List */
+.appointment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Single appointment item */
+.appointment-item {
+  background-color: #1a1a1a;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+/* Doctor Header */
+.doctor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.doctor-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.doctor-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.doctor-info span {
+  display: block;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Buttons */
+.action-btn, .delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.action-btn {
+  background-color: #15b364;
+  color: #fff;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+/* Appointment details */
+.appointment-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.appointment-details div {
+  flex: 1 1 150px;
+}
+
+/* Status labels */
+.status-success {
+  color: #15b364;
+  font-weight: 600;
+}
+
+.status-pending {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.status-progress {
+  color: #17a2b8;
+  font-weight: 600;
+}
